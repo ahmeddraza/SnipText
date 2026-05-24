@@ -39,6 +39,8 @@ It is designed to feel fast: click, snip, extract, paste.
 5. The text is copied automatically.
 6. Paste it anywhere.
 
+> **Note:** SnipText currently works best with clear, readable printed text. Handwritten text is not supported reliably yet.
+
 ## Privacy
 
 SnipText is local-first:
