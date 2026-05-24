@@ -51,11 +51,17 @@ SnipText is local-first:
 
 ## Screenshots
 
-Add screenshots to `assets/screenshots/` when publishing:
+### Popup
 
-- Popup screenshot
-- Crop UI screenshot
-- Success toast screenshot
+![SnipText popup](assets/screenshots/Popup.png)
+
+### Crop UI
+
+![SnipText crop UI](assets/screenshots/Crop_UI.png)
+
+### Success Toast
+
+![SnipText success toast](assets/screenshots/Success.png)
 
 ## Future Improvements
 
