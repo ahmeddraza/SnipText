@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnipText</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="popup-page">
+    <main class="popup-shell">
+      <div class="popup-brand">
+        <div class="app-mark" aria-hidden="true">
+          <img src="assets/icons/sniptext-logo.png" alt="">
+        </div>
+        <div>
+          <h1>SnipText</h1>
+          <p class="muted">Instant OCR from screenshots</p>
+        </div>
+      </div>
+
+      <button id="captureBtn" class="primary-btn" type="button">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M7 3v3H4v2h3v3h2V8h3V6H9V3H7Zm8 3h2.2c1.1 0 1.8.7 1.8 1.8v9.4c0 1.1-.7 1.8-1.8 1.8H6.8C5.7 19 5 18.3 5 17.2V15H3v2.4C3 19.6 4.4 21 6.6 21h10.8c2.2 0 3.6-1.4 3.6-3.6V7.6C21 5.4 19.6 4 17.4 4H15v2Zm-3 4.5A3.5 3.5 0 1 0 12 17a3.5 3.5 0 0 0 0-7Zm0 2A1.5 1.5 0 1 1 12 15a1.5 1.5 0 0 1 0-3Z"/>
+        </svg>
+        Take Snip
+      </button>
+
+      <p id="status" class="status" role="status" aria-live="polite">Ready to capture.</p>
+      <p class="popup-footer">
+        <span>Text is processed locally</span>
+        <span class="version-pill">v1.1.0</span>
+      </p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

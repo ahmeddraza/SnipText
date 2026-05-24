@@ -1,0 +1,17 @@
+{
+  "name": "sniptext",
+  "version": "1.1.0",
+  "description": "Instant OCR Chrome extension that copies selected screenshot text to the clipboard.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check popup.js && node --check crop.js"
+  },
+  "keywords": [
+    "chrome-extension",
+    "ocr",
+    "tesseract",
+    "snipping-tool",
+    "clipboard"
+  ]
+}

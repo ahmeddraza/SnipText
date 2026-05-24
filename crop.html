@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnipText - Select Area</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="crop-page">
+    <header class="snip-toolbar">
+      <button id="cancelBtn" class="ghost-btn" type="button">Cancel</button>
+      <span class="version-pill toolbar-version">v1.1.0</span>
+      <p id="hint">Drag to select text</p>
+      <span id="progressText" class="toolbar-progress" hidden>0%</span>
+      <button id="confirmBtn" class="primary-btn compact" type="button" disabled>Extract</button>
+    </header>
+
+    <main class="crop-workspace">
+      <canvas id="screenshotCanvas" aria-label="Screenshot crop area"></canvas>
+      <div id="emptyState" class="empty-state" hidden>
+        No screenshot found. Open the extension popup and take a snip first.
+      </div>
+    </main>
+
+    <div id="successToast" class="success-toast" role="status" aria-live="polite" hidden>
+      <span class="checkmark" aria-hidden="true"></span>
+      Copied to clipboard
+    </div>
+
+    <p id="status" class="sr-status" role="status" aria-live="polite">Loading screenshot...</p>
+
+    <script src="libs/tesseract.min.js"></script>
+    <script src="crop.js"></script>
+  </body>
+</html>
